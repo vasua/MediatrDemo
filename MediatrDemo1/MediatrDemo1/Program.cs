@@ -13,7 +13,10 @@ namespace MediatrDemo1
             var createdSecurity = application.CreateSecurity("Bond", "Wells", 80);
             Console.WriteLine($"Our security has: Id - {createdSecurity.Id}; Name - {createdSecurity.Name}; Issue Price - {createdSecurity.IssuePrice}");
             var fetchedSecurity = application.GetSecurity("Bond");
-
+            if (fetchedSecurity == createdSecurity)
+            {
+                Console.WriteLine("Successfully Saved!");
+            }
         }
 
     }

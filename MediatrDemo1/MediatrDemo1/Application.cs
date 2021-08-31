@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using MediatrDemo1.Models;
+using MediatrDemo1.Services;
 
 namespace MediatrDemo1
 {
